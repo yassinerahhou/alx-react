@@ -1,9 +1,21 @@
 {
+  "name": "task_0",
+  "version": "1.0.0",
+  "description": "Webpack demo project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.6.0"
   }
 }
