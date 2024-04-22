@@ -1,0 +1,7 @@
+Install webpack (dev dependency), jQuery (dependency), and Lodash (dependency) within the folder using npm.
+npm init -y
+npm install webpack webpack-cli --save-dev
+
+npm install jquery
+npm install lodash
+npm run dev
