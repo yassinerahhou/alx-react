@@ -11,3 +11,4 @@ How to use React with Webpack & Babel
 ==========================
 CREAT REACT APP = > create-react-app
 run react app = > npm start
+to run test file = yarn test or npm test
