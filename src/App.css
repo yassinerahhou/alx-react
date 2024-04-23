@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+
+  flex-grow: 1;
+}
+
+.App-body {
+  padding: 1rem;
+}
+.App-header {
+  border-bottom: 2px solid red;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+.App-header h1 {
+  color: red;
+  margin-left: 20px;
+}
+.App-header img {
+  width: 200px;
+  height: 200px;
+}
+
+/* body */
+
+/*  targettiing first p in the body  */
+body > p:first-of-type {
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 200;
+  /* padding: 10% 5%; */
+}
+
+.App-body input {
+  margin: 1rem;
+}
+
+/* footer */
+.App-footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid red;
+  text-align: center;
+  margin-top: auto;
+  height: 40px;
+  font-style: italic;
+}
