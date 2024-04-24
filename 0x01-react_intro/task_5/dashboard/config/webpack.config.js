@@ -1,7 +1,8 @@
+// task_5/dashboard/config/webpack.config.js
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.js", // Update entry point to point to index.js in src directory
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "../dist"),
@@ -14,14 +15,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
+      // Add rules for handling CSS files, image files, etc. as needed
     ],
   },
   devtool: "inline-source-map",
