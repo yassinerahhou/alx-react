@@ -1,0 +1,6 @@
+1 - npm install prop-types : PropTypes is a library used in React to specify the type of props that a component should receive. It helps in debugging and ensuring that the components receive the correct types of props, which in turn improves code reliability and maintainability.
+
+
+
+PROGRESS : BADI FTASK 04 - khsni n raj3 = components with PropTypes.
+// 
