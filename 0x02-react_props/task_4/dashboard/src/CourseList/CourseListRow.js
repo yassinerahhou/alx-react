@@ -12,11 +12,11 @@ const CourseListRow = ({
       <tr>
         {/* check if textSecondCell is null */}
         {textSecondCell === null ? (
-          <th colSpan="2">{textFirstCell} </th>
+          <th colSpan="2">{textFirstCell}</th>
         ) : (
           <>
-            <th>{textFirstCell} </th>
-            <th>{textSecondCell} </th>
+            <th>{textFirstCell}</th>
+            <th>{textSecondCell}</th>
           </>
         )}
       </tr>
@@ -24,8 +24,8 @@ const CourseListRow = ({
   } else {
     return (
       <tr>
-        <td>{textFirstCell} </td>
-        <td>{textSecondCell} </td>
+        <td>{textFirstCell}</td>
+        <td>{textSecondCell}</td>
       </tr>
     );
   }

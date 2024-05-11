@@ -3,17 +3,17 @@ import { shallow } from "enzyme";
 import CourseListRow from "./CourseListRow";
 
 describe("CourseListRow Component", () => {
-  it("if isHeader = true, The component renders one cell with colspan = 2 when textSecondCell does not exist", () => {
+  it("renders one cell with colspan = 2 when isHeader is true and textSecondCell does not exist", () => {
     const wrapper = shallow(
       <CourseListRow isHeader={true} textFirstCell="firstcall" />
     );
 
     expect(wrapper.find("th")).toHaveLength(1);
-    expect(wrapper.find("th").prop("colSpan")).toEqual("2"); // Change to string
+    expect(wrapper.find("th").prop("colSpan")).toEqual("2");
     expect(wrapper.find("th").text()).toEqual("firstcall");
   });
 
-  it("should render two header cells when textSecondCell is present", () => {
+  it("renders two header cells when isHeader is true and textSecondCell is present", () => {
     const wrapper = shallow(
       <CourseListRow
         isHeader={true}
@@ -24,16 +24,16 @@ describe("CourseListRow Component", () => {
 
     expect(wrapper.find("th")).toHaveLength(2);
     expect(wrapper.find("th").first().prop("colSpan")).toEqual(undefined);
-    expect(wrapper.find("th").first().text().trim()).toEqual("firstcall"); // Trim the extra space
+    expect(wrapper.find("th").first().text().trim()).toEqual("firstcall");
     expect(wrapper.find("th").last().text()).toEqual("secondcall");
   });
 
-  it("when isHeader is false", () => {
+  it("renders two td elements within a tr element when isHeader is false", () => {
     const wrapper = shallow(
       <CourseListRow
         isHeader={false}
         textFirstCell="firstcall"
-        textSecondCell="secondcall" // updated comment
+        textSecondCell="secondcall"
       />
     );
     expect(wrapper.find("tr")).toHaveLength(1);
