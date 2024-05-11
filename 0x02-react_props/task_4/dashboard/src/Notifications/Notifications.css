@@ -1,6 +1,10 @@
 .Notifications {
   border: thin dotted #e0344a;
   padding: 16px;
+  height: 15%;
+  width: 30%;
+  right: 0;
+  position: absolute;
 }
 
 ul li[data-notification-type="urgent"] {
@@ -9,4 +13,11 @@ ul li[data-notification-type="urgent"] {
 
 ul li[data-notification-type="default"] {
   color: blue;
+}
+
+.menuItem {
+  right: 0;
+  position: absolute;
+  top: 0;
+  margin: 20px;
 }

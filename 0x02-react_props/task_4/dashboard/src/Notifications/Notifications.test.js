@@ -22,3 +22,30 @@ it(" renders the right html", () => {
   );
   expect(wrapper.find("li").html()).toEqual("<li><u>test</u></li>");
 });
+
+it(" menu item is being displayed when displayDrawer is false", () => {
+  const wrapper = shallow(<Notifications displayDrawer={false} />);
+  expect(wrapper.exists("div.menuItem")).toBe(true);
+});
+it("Checks that the div.Notifications is not being displayed when displayDrawer is false", () => {
+  const NotificationsComp = shallow(<Notifications displayDrawer={false} />);
+
+  expect(NotificationsComp.exists("div.Notifications")).toBe(false);
+});
+it("Checks that the menu item is being displayed when displayDrawer is true", () => {
+  const NotificationsComp = shallow(<Notifications displayDrawer={true} />);
+
+  expect(NotificationsComp.exists("div.menuItem")).toBe(true);
+});
+
+it("Checks that the div.Notifications is being displayed when displayDrawer is true", () => {
+  const NotificationsComp = shallow(<Notifications displayDrawer={true} />);
+
+  expect(NotificationsComp.exists("div.Notifications")).toBe(true);
+});
+it("renders this text : 'Here is the list of notifications'", () => {
+  const NotificationsComp = shallow(<Notifications displayDrawer={true} />);
+  expect(NotificationsComp.find("p").text()).toBe(
+    "Here is the list of notifications"
+  );
+});

@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import CourseListRow from "./CourseListRow";
-import "CourseList.css";
-const CourseListe = () => {
+import "./CourseList.css";
+const CourseList = () => {
   return (
     <table id="CourseList">
       <thead>
@@ -35,4 +34,4 @@ const CourseListe = () => {
   );
 };
 
-export default CourseListe;
+export default CourseList;
